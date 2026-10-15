@@ -1,0 +1,195 @@
+/* 기본 초기화 및 폰트 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family:
+    "Pretendard",
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    sans-serif;
+}
+
+/* 전체 박스 레이아웃 */
+.home-page {
+  width: 100%;
+  max-width: 640px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 로고 영역 */
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.icon-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3182f6;
+}
+
+/* 입력 폼 영역 */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* 각 입력 그룹 (이메일, 닉네임, 비밀번호, 비밀번호 확인) */
+.email-box,
+.nickname-box,
+.password-box,
+.password-confirm-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.emil-text,
+.nickname-text,
+.password-text,
+.password-confirm-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.emil-input,
+.nickname-input,
+.password-input,
+.password-confirm-input {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background-color: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.emil-input::placeholder,
+.nickname-input::placeholder,
+.password-input::placeholder,
+.password-confirm-input::placeholder {
+  color: #9ea4aa;
+}
+
+.emil-input:focus,
+.nickname-input:focus,
+.password-input:focus,
+.password-confirm-input:focus {
+  border-color: #3182f6;
+}
+
+/* 회원가입 버튼 (기본 비활성 회색 상태) */
+.signup-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: #9ea4aa;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* 값이 모두 입력되어 활성화될 때 적용할 클래스 */
+.signup-box.active {
+  background-color: #3182f6;
+}
+
+.signup-box:hover {
+  background-color: #1b65d4;
+}
+
+/* 간편 로그인 영역 */
+.simple-login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 24px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.simple-login-text {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.simple-login-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.google-logo,
+.kakao-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+}
+
+.google-logo img,
+.kakao-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 로그인 안내 영역 */
+.user-login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666666;
+  width: 100%;
+}
+
+.user-login {
+  color: #3182f6;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
+}
