@@ -21,7 +21,7 @@ body.container {
 .box {
   width: 100%;
   max-width: 640px;
-  height: 100%;
+  height: 618px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +32,7 @@ body.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
   width: 396px;
   height: 132px;
 }
@@ -96,7 +97,7 @@ body.container {
 
 .email-input:focus,
 .password-input:focus {
-  border-color: #3182f6;
+  border-color: #3692ff;
 }
 
 .login-box {
@@ -110,16 +111,16 @@ body.container {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 40px;
   transition: background-color 0.2s ease;
 }
 
 .login-box.active {
-  background-color: #3182f6;
+  background-color: #3692ff;
 }
 
 .login-box:hover {
-  background-color: #1b65d4;
+  background-color: #3692ff;
 }
 
 .simple-login-box {
@@ -179,8 +180,26 @@ body.container {
 }
 
 .panda-first-signup {
-  color: #3182f6;
+  color: #3692ff;
   text-align: center;
   font-weight: 500;
   text-decoration: underline;
+}
+
+/* 눈 아이콘 */
+.input-wrapper {
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.eye {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }

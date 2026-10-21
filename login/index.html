@@ -8,11 +8,11 @@
   </head>
   <body class="container">
     <div class="box">
-      <header class="icon-box">
+      <a href="../main/index.html" class="icon-box">
         <img src="../images/panda_face.png" alt="판다마켓 로고" class="icon" />
 
         <div class="icon-text">판다마켓</div>
-      </header>
+      </a>
 
       <main class="main-box">
         <div class="email-box">
@@ -28,13 +28,21 @@
 
         <div class="password-box">
           <label class="password-text">비밀번호</label>
-          <input
-            type="password"
-            id="user-password"
-            placeholder="비밀번호를 입력해주세요"
-            class="password-input"
-            required
-          />
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="user-password"
+              placeholder="비밀번호를 입력해주세요"
+              class="password-input"
+              required
+            />
+            <img
+              src="../images/eye.png"
+              alt="눈 아이콘"
+              class="eye"
+              id="eyeicon"
+            />
+          </div>
         </div>
 
         <a href="" class="login-box">로그인</a>
