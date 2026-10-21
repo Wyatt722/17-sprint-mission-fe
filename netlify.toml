@@ -1,4 +1,2 @@
-[[redirects]]
-  from = "/*"
-  to = "/main/index.html"
-  status = 200
+[build]
+  publish = "main"
